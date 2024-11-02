@@ -1,0 +1,22 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the ServiceDefaults project in the Application layer. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Service Defaults Project Template</Name>
+		<Description>A project for default application services.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>30</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.ServiceDefaults</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$ext_safeprojectname$.ServiceDefaults.csproj" File="$ext_safeprojectname$.ServiceDefaults.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+			<ItemGroup>
+				<ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj" />
+			</ItemGroup>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

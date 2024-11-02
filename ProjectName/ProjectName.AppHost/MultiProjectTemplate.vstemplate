@@ -1,0 +1,19 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the AppHost project in the Infrastructure layer. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>App Host Project Template</Name>
+		<Description>Infrastructure services and configurations.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>50</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.AppHost</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$safeprojectname$.AppHost.csproj" File="$safeprojectname$.AppHost.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+		</Project>
+	</TemplateContent>
+</VSTemplate>

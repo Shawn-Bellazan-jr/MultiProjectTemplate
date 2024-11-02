@@ -1,0 +1,20 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the Core project in the Domain layer. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Core Project Template</Name>
+		<Description>The core domain logic and entities.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>40</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.Core</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$ext_safeprojectname$.Core.csproj" File="$ext_safeprojectname$.Core.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+			
+		</Project>
+	</TemplateContent>
+</VSTemplate>

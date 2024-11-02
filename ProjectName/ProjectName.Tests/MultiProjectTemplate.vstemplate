@@ -1,0 +1,19 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the Tests project. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Tests Project Template</Name>
+		<Description>Unit and integration tests.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>60</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.Tests</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$ext_safeprojectname$.Tests.csproj" File="$ext_safeprojectname$.Tests.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+		</Project>
+	</TemplateContent>
+</VSTemplate>

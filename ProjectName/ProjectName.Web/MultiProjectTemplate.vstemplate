@@ -1,0 +1,19 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the Web project in the Presentation layer. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Web Project Template</Name>
+		<Description>A project for the Web front-end of the application.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>10</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.Web</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$safeprojectname$.Web.csproj" File="$safeprojectname$.Web.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+		</Project>
+	</TemplateContent>
+</VSTemplate>

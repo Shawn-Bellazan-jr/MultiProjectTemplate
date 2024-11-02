@@ -1,0 +1,19 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A template for the ApiService project in the Presentation layer. -->
+
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Api Service Project Template</Name>
+		<Description>A project for building API services.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>20</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName.ApiService</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$safeprojectname$.ApiService.csproj" File="$safeprojectname$.ApiService.csproj" ReplaceParameters="true">
+			<!-- Additional content or project-specific details -->
+		</Project>
+	</TemplateContent>
+</VSTemplate>
