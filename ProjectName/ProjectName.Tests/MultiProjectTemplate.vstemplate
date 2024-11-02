@@ -13,11 +13,6 @@
 	</TemplateData>
 	<TemplateContent>
 		<Project TargetFileName="$safeprojectname$.Tests.csproj" File="$safeprojectname$.Tests.csproj" ReplaceParameters="true">
-			<ItemGroup>
-				<ProjectReference Include="..\$safeprojectname$.Core\$safeprojectname$.Core.csproj" />
-				<ProjectReference Include="..\$safeprojectname$.Web\$safeprojectname$.Web.csproj" />
-				<ProjectReference Include="..\$safeprojectname$.ApiService\$safeprojectname$.ApiService.csproj" />
-			</ItemGroup>
 		</Project>
 	</TemplateContent>
 </VSTemplate>

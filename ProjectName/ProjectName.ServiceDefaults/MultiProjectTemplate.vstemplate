@@ -14,9 +14,7 @@
 	<TemplateContent>
 		<Project TargetFileName="$ext_safeprojectname$.ServiceDefaults.csproj" File="$ext_safeprojectname$.ServiceDefaults.csproj" ReplaceParameters="true">
 			<!-- Additional content or project-specific details -->
-			<ItemGroup>
-				<ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj" />
-			</ItemGroup>
+
 		</Project>
 	</TemplateContent>
 </VSTemplate>
