@@ -13,7 +13,10 @@
 	</TemplateData>
 	<TemplateContent>
 		<Project TargetFileName="$safeprojectname$.Web.csproj" File="$safeprojectname$.Web.csproj" ReplaceParameters="true">
-			<!-- Additional content or project-specific details -->
+			<ItemGroup>
+				<ProjectReference Include="..\$safeprojectname$.Core\$safeprojectname$.Core.csproj" />
+				<ProjectReference Include="..\$safeprojectname$.ServiceDefaults\$safeprojectname$.ServiceDefaults.csproj" />
+			</ItemGroup>
 		</Project>
 	</TemplateContent>
 </VSTemplate>

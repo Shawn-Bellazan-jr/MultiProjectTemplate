@@ -1,0 +1,62 @@
+<!-- File: MultiProjectTemplate.vstemplate -->
+<!-- Description: A Visual Studio Template for creating a multi-project solution following Clean Architecture. -->
+
+<VSTemplate Version="3.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Clean Architecture Multi-Project Template</Name>
+		<Description>A Visual Studio Template for a multi-project solution structured with Clean Architecture.</Description>
+		<Icon>Icon.png</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ProjectName</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<EnableEditOfLocationField>true</EnableEditOfLocationField>
+		<CreateInPlace>true</CreateInPlace>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<!-- Presentation Layer -->
+			<SolutionFolder Name="Presentation">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+					ProjectName.Web\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.ApiService" CopyParameters="true">
+					ProjectName.ApiService\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+
+			<!-- Application Layer -->
+			<SolutionFolder Name="Application">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.ServiceDefaults" CopyParameters="true">
+					ProjectName.ServiceDefaults\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+
+			<!-- Domain Layer -->
+			<SolutionFolder Name="Domain">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+					$safeprojectname$.Core\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+
+			<!-- Infrastructure Layer -->
+			<SolutionFolder Name="Infrastructure">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.AppHost" CopyParameters="true">
+					ProjectName.AppHost\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+
+			<!-- Tests -->
+			<SolutionFolder Name="Tests">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+					ProjectName.Tests\MultiProjectTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>
+	
